@@ -2021,7 +2021,7 @@ dependencies = [
  "prost-derive",
  "protobuf",
  "protobuf-build",
- "raft-proto",
+ "raft-proto 0.6.0-alpha (git+https://github.com/tikv/raft-rs)",
 ]
 
 [[package]]
@@ -3205,13 +3205,13 @@ dependencies = [
 [[package]]
 name = "raft"
 version = "0.6.0-alpha"
-source = "git+https://github.com/tikv/raft-rs#c7c230f63c59d408176e9288966da00c579ef4ba"
+source = "git+https://github.com/captain-me0w/raft-rs?branch=captain/flexible#d0a8fe3603003d91e15e7ea901490497267c4cb4"
 dependencies = [
  "fxhash",
  "getset",
  "protobuf",
  "quick-error",
- "raft-proto",
+ "raft-proto 0.6.0-alpha (git+https://github.com/captain-me0w/raft-rs?branch=captain/flexible)",
  "rand",
  "slog",
 ]
@@ -3232,6 +3232,17 @@ dependencies = [
  "protobuf",
  "serde",
  "thiserror",
+]
+
+[[package]]
+name = "raft-proto"
+version = "0.6.0-alpha"
+source = "git+https://github.com/captain-me0w/raft-rs?branch=captain/flexible#d0a8fe3603003d91e15e7ea901490497267c4cb4"
+dependencies = [
+ "lazy_static",
+ "prost",
+ "protobuf",
+ "protobuf-build",
 ]
 
 [[package]]
@@ -3303,7 +3314,7 @@ dependencies = [
  "protobuf",
  "quick-error",
  "raft",
- "raft-proto",
+ "raft-proto 0.6.0-alpha (git+https://github.com/tikv/raft-rs)",
  "rand",
  "serde",
  "serde_derive",
